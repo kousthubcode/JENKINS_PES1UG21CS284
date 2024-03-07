@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'echo "--> in test"'
-                sh './output'
+                //sh 'echo "--> in test"'
+               // sh './output'
 
             }
         }
