@@ -4,14 +4,14 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'echo "--> in build"'
-                build 'PES1UG21CS284-1'
+                build 'PES1UG21CS284-01'
                 sh 'g++ main.cpp -o output'
             }
         }
         stage('Test') { 
             steps {
-                //sh 'echo "--> in test"'
-               // sh './output'
+                sh 'echo "--> in test"'
+                sh './output'
 
             }
         }
